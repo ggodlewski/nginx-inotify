@@ -2,7 +2,7 @@ FROM nginx:alpine
 MAINTAINER Grzegorz Godlewski <gg@gitgis.com>
 
 RUN apk add inotify-tools
-RUN apk add certbot python-certbot-nginx
+RUN apk add certbot certbot-nginx
 
 COPY nginx.run /nginx.run
 RUN chmod +x /nginx.run
